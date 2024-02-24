@@ -1,0 +1,7 @@
+x = input()
+y= ['a','e','i','o','u']
+for a in range(0,len(x)):
+    for b in range(0, len(y)):
+        if x[a]==y[b]:
+            x = x.replace(x[a],str(y.index(y[b])+1))
+print(x)
